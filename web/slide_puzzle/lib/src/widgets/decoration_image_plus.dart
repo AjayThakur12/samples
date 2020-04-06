@@ -151,6 +151,9 @@ class DecorationImagePlus implements DecorationImage {
     if (matchTextDirection) properties.add('match text direction');
     return '$runtimeType(${properties.join(", ")})';
   }
+
+  @override
+  get onError => throw UnimplementedError();
 }
 
 /// The painter for a [DecorationImagePlus].
